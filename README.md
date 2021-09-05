@@ -6,14 +6,17 @@ In this pandemic online shopping is at peak with that everyone compare prices on
 ## What it means
 JUXTAPOSE -> COMPARE
 so compare prices stands for **JUXT A PRICE** --> **COMPARE A PRICE** 
+
 ## How we built it
 1. Python Selenium
 2. Android studio for App Development
 3. NG Rock for deployment
 
+## **NOTE**
+we are using ngrok as beckend, which is running on one of our local systems. So there might be some downtimes because of CPU throttle, as we couldn't get access to online server, we are relying on it.
+
 ## Challenges we ran into
 Web scrapping and deployment to get API was very challenging.
-## Accomplishments that we're proud of
 
 ## What we learned
 We learned web scrapping which were new for all team members and came to know about different deployment platforms which are very good, and this helped for enhancing problem solving skill and read logs to find errors
