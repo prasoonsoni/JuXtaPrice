@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://6d09-117-199-196-7.ngrok.io/")
+                .baseUrl("https://8a87-117-199-196-7.ngrok.io/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
