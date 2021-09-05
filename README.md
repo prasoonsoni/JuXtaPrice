@@ -13,7 +13,7 @@ so compare prices stands for **JUXT A PRICE** --> **COMPARE A PRICE**
 3. NG Rock for deployment
 
 ## **NOTE**
-we are using ngrok as beckend, which is running on one of our local systems. So there might be some downtimes because of CPU throttle, as we couldn't get access to online server, we are relying on it.
+**we are using ngrok as beckend, which is running on one of our local systems. So there might be some downtimes because of CPU throttle, as we couldn't get access to online server, we are relying on it.**
 
 ## Challenges we ran into
 Web scrapping and deployment to get API was very challenging.
