@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Search your product"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:textColor="#368B85"
+        android:textColorHint="#368B85"
+        app:layout_constraintEnd_toStartOf="@+id/findButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_editText"
+        tools:listitem="@layout/item_row" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/mainAnimation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="main.json"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/notFoundAnimation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="not_found.json"
+        app:lottie_loop="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/findButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:paddingLeft="14dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        app:backgroundTint="#368B85"
+        app:cornerRadius="10dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_editText" />
+
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Type the Product name in the textbox and Press search button to find product at minimum price"
+        android:textColor="@color/light_blue"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
