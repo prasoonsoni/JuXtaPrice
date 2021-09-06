@@ -1,3 +1,6 @@
+## **NOTE**
+**We are using ngrok as backend, which is running on one of our local systems. So there might be some downtimes because of CPU throttle, as we couldn't get access to online server, we are relying on it. and _ngrok resets itself every two hours._**
+
 ## Inspiration
 In this pandemic online shopping is at peak with that everyone compare prices on different apps, So taking this problem in consideration we got inspiration o make this app name **Juxtaprice**
 
@@ -11,9 +14,6 @@ so compare prices stands for **JUXT A PRICE** --> **COMPARE A PRICE**
 1. Python Selenium
 2. Android studio for App Development
 3. NG Rock for deployment
-
-## **NOTE**
-**we are using ngrok as backend, which is running on one of our local systems. So there might be some downtimes because of CPU throttle, as we couldn't get access to online server, we are relying on it. and _ngrok resets itself every two hours._**
 
 ## Challenges we ran into
 Web scrapping and deployment to get API was very challenging.
