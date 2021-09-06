@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://8a87-117-199-196-7.ngrok.io/")
+                .baseUrl("https://0991-117-199-196-7.ngrok.io/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onResponse: " + String.valueOf(productDetailsList));
                 adapter.setList(productDetailsList);
                 adapter.notifyDataSetChanged();
-                if(productDetailsList.isEmpty()){
+                if(productDetailsList == null || productDetailsList.isEmpty()){
                     notFoundAnimation.setVisibility(View.VISIBLE);
                     recyclerView.setVisibility(View.INVISIBLE);
                 } else {
